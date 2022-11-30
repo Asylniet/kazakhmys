@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+:root {
+  --clr-primary-900: #385CAD;
+  --clr-primary-700: #00B2E3;
+  --clr-accent-700: #FFC600;
+  --clr-neutral-1000: #ffffff;
+  --clr-neutral-900: #f4f0f8;
+  --clr-neutral-700: #D0D0D0;
+  --clr-dark-700: #262729;
+  --clr-shadow: #26272920;
+  --ff-primary: "Inter", sans-serif;
+  --fw-small: 300;
+  --fw-regular: 400;
+  --fw-semi-medium: 500;
+  --fw-medium: 600;
+  --fw-bold: 700;
+  --fs-700: 3.25rem;
+  --fs-600: 3rem;
+  --fs-550: 2.25rem;
+  --fs-500: clamp(16px, 2rem, 32px);
+  --fs-400: clamp(16px, 1.875rem, 30px);
+  --fs-300: clamp(16px, 1.5rem, 24px);
+  --fs-100: 1rem;
+  --fs-50: 0.875rem;
+  --inline-padding: clamp(20px, 8.125rem, 130px);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex.start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex.spb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.spb.ais {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.g10 {
+  gap: 10px;
+}
+
+.g20 {
+  gap: 20px;
+}
+
+.g40 {
+  gap: 2.5rem;
+}
+
+.mY10 {
+  margin: 10px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.clr-primary {
+  color: var(--clr-primary-700);
+}
+
+.clr-neutral {
+  color: var(--clr-neutral-1000);
+}
+
+.clr-accent {
+  color: var(--clr-accent-700);
+}
+
+.clr-dark {
+  color: var(--clr-dark-700);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-550 {
+  font-size: var(--fs-550);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.pos-rel {
+  position: relative;
+}/*# sourceMappingURL=variables.css.map */
