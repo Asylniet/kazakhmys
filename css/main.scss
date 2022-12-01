@@ -1,0 +1,88 @@
+@import 'style';
+
+.hero {
+    @include flex(center, center, nowrap, column);
+    width: 100%;
+    min-height: 80vh;
+    background-image: url('/assests/images/main-hero.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--clr-neutral-1000);
+    text-align: center;
+    font-weight: var(--fw-bold);
+}
+
+.quickActions {
+    position: relative;
+    top: -60px;
+    padding-inline: var(--inline-padding);
+    .action {
+        @include flex();
+        width: clamp(300px, 30vw, 380px);
+        height: 14.625rem;
+        color: var(--clr-neutral-1000);
+        background-color: var(--clr-primary-900);
+        text-align: center;
+        font-size: var(--fs-300);
+        font-weight: var(--fw-bold);
+        border-radius: 10px;
+        transition: 0.2s ease;
+        &:hover {
+            color: var(--clr-accent-700);
+        }
+    }
+}
+
+.news {
+    padding-inline: var(--inline-padding);
+    .fs-500 {
+        color: var(--clr-primary-900);
+        position: relative;
+        &::after {
+            content: "";
+            width: 100vw;
+            height: 1px;
+            background-color: var(--clr-primary-900);
+            position: absolute;
+            bottom: 0;
+            right: -30px;
+        }
+    }
+}
+
+.news-block-wrapper {
+    margin: 40px 0;
+    .news-block {
+        width: clamp(300px, 100%, 380px);
+        text-align: start;
+        border-radius: 10px;
+        img {
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .info-block {
+            position: relative;
+            top: -20px;
+            border-radius: 10px;
+            padding: 30px 10px 10px 10px;
+            box-shadow: 0 0 10px var(--clr-shadow);
+        }
+        .date {
+            margin: 10px 0;
+            color: var(--clr-dark-500);
+            display: block;
+            font-weight: var(--fw-regular);
+        }
+        .descr {
+            display: block;
+            font-weight: var(--fw-semi-medium);
+        }
+        .link {
+            margin-top: 10px;
+            justify-content: flex-start;
+            width: fit-content;
+        }
+    }
+}
+    

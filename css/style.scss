@@ -180,6 +180,8 @@ header {
     opacity: 0;
     visibility: hidden;
     transition: 0.2s ease;
+    background-color: var(--clr-neutral-1000);
+    z-index: 1;
   }
   .options {
     padding: 5px 10px;
@@ -274,10 +276,18 @@ header {
   @include flex(space-between, center);
   border-top: 1px solid var(--clr-neutral-700);
   .selectable {
+    &:hover, &.open {
+      .selected {
+        color: var(--clr-primary-900);
+      }
+      path {
+        fill: var(--clr-primary-900);
+      }
+    }
     .options-holder {
       --size: -10px;
       border-radius: 10px;
-      padding-top: 20px;
+      padding: 20px 0;
     }
     .options::after {
       top: -70px;
@@ -295,18 +305,75 @@ header {
     svg {
       display: inline-block;
     }
+    .forStudent {
+      max-width: 310px;
+      .header-bottom-option {
+        min-width: 310px;
+        width: 100%;
+      }
+    }
     .header-bottom-option {
       display: inline-block;
       min-width: 330px;
       margin: 5px 0;
+      padding-left: 20px;
       transition: 0.2s ease;
       font-weight: var(--fw-normal);
       font-size: var(--fs-100);
       cursor: pointer;
-      transition: 0.2s ease;
       &:hover {
         color: var(--clr-primary-900);
       }
+    }
+  }
+  a.just-link{
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    font-weight: var(--fw-medium);
+    cursor: pointer;
+    &:hover {
+      color: var(--clr-primary-900);
+    }
+  }
+}
+
+.button {
+  @include flex();
+  padding: 1rem 2.185rem;
+  background-color: var(--clr-accent-700);
+  color: var(--clr-dark-700);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  gap: 10px;
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-100);
+  transition: 0.2s ease;
+  cursor: pointer;
+  svg {
+    transition: 0.2s ease;
+  }
+  &:hover {
+    box-shadow: 0 10px 20px var(--clr-accent-shadow);
+    svg {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.link {
+  @include flex();
+  gap: 10px;
+  cursor: pointer;
+  &.primary {
+    color: var(--clr-primary-900);
+  }
+  svg {
+    transition: 0.2s ease;
+  }
+  &:hover {
+    svg {
+      transform: rotate(45deg);
     }
   }
 }

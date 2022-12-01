@@ -3,10 +3,12 @@
   --clr-primary-900: #385CAD;
   --clr-primary-700: #00B2E3;
   --clr-accent-700: #FFC600;
+  --clr-accent-shadow: #ffc80020;
   --clr-neutral-1000: #ffffff;
   --clr-neutral-900: #f4f0f8;
   --clr-neutral-700: #D0D0D0;
   --clr-dark-700: #262729;
+  --clr-dark-500: #6F6F6F;
   --clr-shadow: #26272920;
   --ff-primary: "Inter", sans-serif;
   --fw-small: 300;
@@ -19,10 +21,10 @@
   --fs-550: 2.25rem;
   --fs-500: clamp(16px, 2rem, 32px);
   --fs-400: clamp(16px, 1.875rem, 30px);
-  --fs-300: clamp(16px, 1.5rem, 24px);
+  --fs-300: clamp(16px, 1.25rem, 20px);
   --fs-100: 1rem;
   --fs-50: 0.875rem;
-  --inline-padding: clamp(20px, 8.125rem, 130px);
+  --inline-padding: clamp(20px, 5vw, 130px);
 }
 
 .flex {
