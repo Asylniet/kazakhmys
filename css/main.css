@@ -167,7 +167,7 @@ ol[role=list] {
 
 html {
   width: 100vw;
-  font-size: clamp(8px, 2vw, 16px);
+  font-size: clamp(12px, 1.5vw, 16px);
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -221,12 +221,14 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-main {
+.header-middle, .header-bottom-wrapper, .header-top {
   margin: 0 auto;
   max-width: 1560px;
 }
 
 .container {
+  margin: 0 auto;
+  max-width: 1560px;
   padding-inline: var(--inline-padding);
 }
 
@@ -255,6 +257,11 @@ header {
   font-size: var(--fs-50);
 }
 
+.header-top-wrapper {
+  width: 100vw;
+  background: var(--clr-primary-900);
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -263,7 +270,6 @@ header {
   flex-wrap: nowrap;
   padding: 9px var(--inline-padding);
   width: 100%;
-  background: var(--clr-primary-900);
   color: var(--clr-neutral-1000);
   font-weight: var(--fw-small);
 }
@@ -317,7 +323,7 @@ header {
 }
 .selectable svg {
   display: inline-block;
-  margin: 0 0 3px 5px;
+  margin: 0 0 2px 0;
   transition: 0.2s ease;
 }
 .selectable .options-holder {
@@ -364,7 +370,7 @@ header {
 
 .language-option {
   display: inline-block;
-  min-width: 30px;
+  min-width: 1.875rem;
   text-transform: uppercase;
   margin: 5px 0;
   transition: 0.2s ease;
@@ -394,6 +400,7 @@ header {
   outline: none;
   border: 1px solid var(--clr-neutral-700);
   border-radius: 5px;
+  width: 13.375rem;
 }
 .search button {
   display: block;
@@ -594,24 +601,34 @@ header {
 }
 
 .news-block-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 40px 0;
+  gap: 10px;
 }
 .news-block-wrapper .news-block {
-  width: clamp(300px, 100%, 380px);
+  width: clamp(300px, 30%, 380px);
   text-align: start;
   border-radius: 10px;
+  isolation: isolate;
+  position: relative;
+  background-color: var(--clr-neutral-1000);
+  box-shadow: 0 0 10px var(--clr-shadow);
 }
 .news-block-wrapper .news-block img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
 .news-block-wrapper .news-block .info-block {
   position: relative;
-  top: -20px;
   border-radius: 10px;
-  padding: 30px 10px 10px 10px;
-  box-shadow: 0 0 10px var(--clr-shadow);
+  padding: 10px;
+  z-index: -1;
 }
 .news-block-wrapper .news-block .date {
   margin: 10px 0;

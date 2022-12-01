@@ -52,21 +52,27 @@
 }
 
 .news-block-wrapper {
+    @include flex(center, stretch, wrap);
     margin: 40px 0;
+    gap: 10px;
     .news-block {
-        width: clamp(300px, 100%, 380px);
+        width: clamp(300px, 30%, 380px);
         text-align: start;
         border-radius: 10px;
+        isolation: isolate;
+        position: relative;
+        background-color: var(--clr-neutral-1000);
+        box-shadow: 0 0 10px var(--clr-shadow);
         img {
+            width: 100%;
             object-fit: cover;
             border-radius: 10px;
         }
         .info-block {
             position: relative;
-            top: -20px;
             border-radius: 10px;
-            padding: 30px 10px 10px 10px;
-            box-shadow: 0 0 10px var(--clr-shadow);
+            padding: 10px;
+            z-index: -1;
         }
         .date {
             margin: 10px 0;
