@@ -36,14 +36,49 @@ window.addEventListener('DOMContentLoaded', () => {
       languageContainer.classList.remove('open');
     });
   });
-  console.log(window.innerWidth);
-  if (window.innerWidth <= 760) {
-    console.log('Smaller');
+
+
+  const header = document.querySelector('.header-wrapper');
+  const hamburger = document.querySelector('.hamburger-wrapper');
+  hamburger.addEventListener('click', () => {
+    header.classList.toggle('open');
+    document.querySelector('html').classList.toggle('locked');
+  });
+});
+
+
+['DOMContentLoaded', 'resize'].forEach((event) => {
+  window.addEventListener(event, () => {
     const contact1 = document.querySelector('.contact1');
     const contact2 = document.querySelector('.contact2');
-    const children = contact2.children;
-    children.forEach((child) => {
-      contact1.appendChild(child);
-    })
-  }
+    const contact3 = document.querySelector('.contact3');
+    const contact3Wrapper = document.querySelector('.contact3-wrapper');
+    if (window.innerWidth <= 770) {
+      [contact2, contact3Wrapper].forEach((container) => {
+        const children = [].slice.call(container.children);
+        children.forEach((child) => {
+          contact1.appendChild(child);
+        });
+      })
+    } else {
+      const contact2Children = [].slice.call(contact1.children).slice(3);
+      contact2Children.forEach((child) => {
+        contact2.appendChild(child);
+      });
+
+      contact3Wrapper.appendChild(contact3);
+
+      header.classList.remove('open');
+      document.querySelector('html').classList.remove('locked');
+    }
+
+    const header = document.querySelector('header');
+    if (window.innerWidth <= 690) {
+      const headerMiddle = document.querySelector('.header-middle');
+      header.appendChild(headerMiddle);
+    } else {
+      const headerBottom = document.querySelector('.header-bottom-wrapper');
+      header.appendChild(headerBottom);
+    }
+  });
 });
