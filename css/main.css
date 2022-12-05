@@ -741,12 +741,12 @@ header {
 
 .news-block-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 40px 0;
-  gap: 10px;
+  gap: 1.25rem;
 }
 .news-block-wrapper .news-block {
   width: clamp(300px, 30%, 380px);
@@ -785,4 +785,24 @@ header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.director-block-wrapper {
+  position: relative;
+}
+.director-block-wrapper::before {
+  width: 100vw;
+  height: 80%;
+  position: absolute;
+  background: var(--clr-neutral-700);
+}
+
+.director-block {
+  padding-inline: var(--inline-padding);
+}
+
+@media screen and (max-width: 1045px) {
+  .news-block-wrapper {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */

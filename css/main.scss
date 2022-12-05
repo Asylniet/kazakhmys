@@ -55,9 +55,9 @@
 }
 
 .news-block-wrapper {
-    @include flex(center, stretch, wrap);
+    @include flex(space-between, stretch, wrap);
     margin: 40px 0;
-    gap: 10px;
+    gap: 1.25rem;
     .news-block {
         width: clamp(300px, 30%, 380px);
         text-align: start;
@@ -94,4 +94,23 @@
         }
     }
 }
+
+.director-block-wrapper {
+    position: relative;
+    &::before {
+        width: 100vw;
+        height: 80%;
+        position: absolute;
+        background: var(--clr-neutral-700);
+    }
+}
+
+.director-block {
+    padding-inline: var(--inline-padding);
+}
     
+@media screen and (max-width: 1045px) {
+    .news-block-wrapper {
+        justify-content: center;
+    }
+}
