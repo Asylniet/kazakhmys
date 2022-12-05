@@ -439,11 +439,11 @@ header {
   &.primary {
     color: var(--clr-primary-900);
   }
-  svg {
+  svg, img {
     transition: 0.2s ease;
   }
   &:hover {
-    svg {
+    svg, img {
       transform: rotate(45deg);
     }
   }
@@ -466,7 +466,7 @@ header {
     .header-top-wrapper {
       transition: 0.2s ease;
       transition-delay: 0.5s ease;
-      background-color: #385bad70;
+      background-color: #385bada3;
       backdrop-filter: blur(20px);
     }
     
