@@ -18,10 +18,11 @@
   --fw-bold: 700;
   --fs-700: 3.25rem;
   --fs-600: 3rem;
-  --fs-550: 2.25rem;
+  --fs-550: 2.5rem;
   --fs-500: clamp(16px, 2rem, 32px);
   --fs-400: clamp(16px, 1.875rem, 30px);
   --fs-300: clamp(16px, 1.25rem, 20px);
+  --fs-200: clamp(16px, 1.125rem, 18px);
   --fs-100: 1rem;
   --fs-50: 0.875rem;
   --fs-25: 12px;
@@ -87,6 +88,10 @@
 
 .mY10 {
   margin: 0.625rem 0;
+}
+
+.mY60 {
+  margin: 3.75rem 0;
 }
 
 .center {
@@ -157,4 +162,4 @@
   :root {
     --fs-700: 2.75rem;
   }
-}/*# sourceMappingURL=variables.css.map */
+}

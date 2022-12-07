@@ -35,7 +35,7 @@ function responsiveHeader() {
     const headerBottom = document.querySelector('.header-bottom-wrapper');
     header.appendChild(headerBottom);
 
-    document.querySelector('.header-wrapper').classList.remove('open');
+    document.querySelector('header-component').classList.remove('open');
     document.querySelector('html').classList.remove('locked');
   }
 }
@@ -44,7 +44,6 @@ function responsiveHeader() {
 window.addEventListener('DOMContentLoaded', () => {
   responsiveHeader();
   const selectables = document.querySelectorAll('.selectable');
-  const optionsContainer = document.querySelector('.options');
   selectables.forEach((selectable) => {
     const selected = selectable.querySelector('.selected');
     selected.addEventListener('click', () => {
@@ -65,7 +64,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const selected = languageContainer.querySelector('.selected');
     option.addEventListener("click", () => {
       const language = option.textContent;
-      console.log(language);
       languageContainer.setAttribute('selected', language);
       option.textContent = selected.querySelector('.language-option').textContent;
       selected.querySelector('.language-option').textContent = language;
@@ -74,7 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  const header = document.querySelector('.header-wrapper');
+  const header = document.querySelector('header-component');
   const hamburger = document.querySelector('.hamburger-wrapper');
   hamburger.addEventListener('click', () => {
     header.classList.toggle('open');
