@@ -58,7 +58,8 @@
 
 .news-block-wrapper {
     @include flex(space-between, stretch, wrap);
-    margin: 40px 0;
+    margin: 2.5rem 0;
+    margin-bottom: 8.125rem;
     gap: 1.25rem;
     .news-block {
         width: clamp(300px, 30%, 380px);
@@ -153,9 +154,65 @@
         }
     }
 }
-    
-@media screen and (max-width: 1045px) {
-    .news-block-wrapper {
+
+.instagram-block {
+    margin-bottom: 8.125rem;
+    .insta-blocks {
+        margin-top: 4rem;
+        @include flex(space-between, center, wrap);
+        gap: 1rem;
+        .block {
+            width: clamp(300px, 100%, 380px);
+            border: 3px solid transparent;
+            transition: 0.2s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &:hover {
+                border-color: var(--clr-primary-900);
+            }
+        }
+    }
+}
+
+.partners-block-wrapper {
+    margin-top: 3.5rem;
+    gap: 1.25rem;
+}
+
+.partners-block {
+    @include flex();
+    width: clamp(280px, 100%, 380px);
+    min-width: 300px;
+    min-height: 150px;
+    background: var(--clr-neutral-1000);
+    box-shadow: 0 0 10px var(--clr-shadow);
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+    &:hover {
+        box-shadow: 0 0 0 transparent;
+        border-color: var(--clr-dark-500);
+    }
+}
+
+.textInTheEnd {
+    width: 100%;
+    text-align: end;
+    position: relative;
+    top: -50px;
+    span {
+        width: clamp(300px, 30%, 600px);
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 1303px) {
+    .instagram-block .insta-blocks {
         justify-content: center;
     }
 }
@@ -165,8 +222,31 @@
         height: 100%;
     }
 }
+    
+@media screen and (max-width: 1045px) {
+    .news-block-wrapper {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1084px) {
+    .textInTheEnd {
+        margin: 3rem 0;
+        position: static;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 863px) {
+    .partners-blocks .partners-block-wrapper {
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 577px) {
+    .dn577 {
+        display: none;
+    }
     .director-block .director-block-info {
         padding: 2rem 0;
     }

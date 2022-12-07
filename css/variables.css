@@ -24,6 +24,7 @@
   --fs-300: clamp(16px, 1.25rem, 20px);
   --fs-100: 1rem;
   --fs-50: 0.875rem;
+  --fs-25: 12px;
   --inline-padding: clamp(20px, 5vw, 130px);
 }
 
