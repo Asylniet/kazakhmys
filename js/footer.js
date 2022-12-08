@@ -28,7 +28,7 @@ class Footer extends HTMLElement {
                     </div>
                     <div class="contact flex start">
                         <img src="/assests/icons/location-yellow.svg" alt="Адрес">
-                        <a href="" class="inline">РК, Карагандинская область, <br> г. Балхаш, ул. Абая, 36</a>
+                        <a href="https://yandex.kz/maps/org/6322348238/?ll=74.981621%2C46.838819&utm_source=share&z=18" target="_blank" rel="noreferrer-noopener" class="underline-hover inline">РК, Карагандинская область, <br> г. Балхаш, ул. Абая, 36</a>
                     </div>
                 </div>
                 <div class="footer-nav wrap flex spb ais">

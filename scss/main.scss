@@ -11,6 +11,7 @@
     color: var(--clr-neutral-1000);
     text-align: center;
     font-weight: var(--fw-bold);
+
     .fs-700 {
         padding: 0 10px;
     }
@@ -20,6 +21,7 @@
     position: relative;
     top: -60px;
     padding-inline: var(--inline-padding);
+
     .action {
         @include flex();
         width: clamp(300px, 30vw, 380px);
@@ -31,6 +33,7 @@
         font-weight: var(--fw-bold);
         border-radius: 10px;
         transition: 0.2s ease;
+
         &:hover {
             color: var(--clr-accent-700);
         }
@@ -45,6 +48,7 @@
     font-size: var(--fs-500);
     color: var(--clr-primary-900);
     position: relative;
+
     &::after {
         content: "";
         width: 100vw;
@@ -61,6 +65,7 @@
     margin: 2.5rem 0;
     margin-bottom: 8.125rem;
     gap: 1.25rem;
+
     .news-block {
         width: clamp(300px, 30%, 380px);
         text-align: start;
@@ -69,27 +74,32 @@
         position: relative;
         background-color: var(--clr-neutral-1000);
         box-shadow: 0 0 10px var(--clr-shadow);
+
         img {
             width: 100%;
             object-fit: cover;
             border-radius: 10px;
         }
+
         .info-block {
             position: relative;
             border-radius: 10px;
             padding: 10px;
             z-index: -1;
         }
+
         .date {
             margin: 10px 0;
             color: var(--clr-dark-500);
             display: block;
             font-weight: var(--fw-regular);
         }
+
         .descr {
             display: block;
             font-weight: var(--fw-semi-medium);
         }
+
         .link {
             margin-top: 10px;
             justify-content: flex-start;
@@ -101,6 +111,7 @@
 .director-block-wrapper {
     position: relative;
     margin-bottom: 8.125rem;
+
     &::before {
         content: "";
         z-index: -1;
@@ -113,21 +124,25 @@
 
 .director-block {
     position: relative;
+
     img {
         flex: 1;
         width: clamp(240px, 40%, 480px);
     }
+
     &-info {
         flex: 1;
         @include flex(flex-start, flex-start, nowrap, column);
         padding: 3.125rem 20px 20px 3.125rem;
         min-width: 280px;
+
         .title {
             position: relative;
             font-size: var(--fs-500);
             color: var(--clr-primary-900);
             font-weight: var(--fw-medium);
             margin-bottom: 3.4rem;
+
             &::after {
                 content: "";
                 position: absolute;
@@ -139,10 +154,12 @@
                 z-index: -1;
             }
         }
+
         .descr {
             font-weight: var(--fw-semi-medium);
             margin-bottom: 1.25rem;
         }
+
         .text {
             font-size: var(--fs-50);
             font-weight: var(--fw-small);
@@ -157,21 +174,25 @@
 
 .instagram-block {
     margin-bottom: 8.125rem;
+
     .insta-blocks {
         margin-top: 4rem;
         @include flex(space-between, center, wrap);
         gap: 1rem;
+
         .block {
             width: clamp(300px, 100%, 380px);
             border: 3px solid transparent;
             transition: 0.2s ease;
             border-radius: 15px;
             overflow: hidden;
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+
             &:hover {
                 border-color: var(--clr-primary-900);
             }
@@ -194,6 +215,7 @@
     border-radius: 10px;
     border: 1px solid transparent;
     transition: 0.2s ease;
+
     &:hover {
         box-shadow: 0 0 0 transparent;
         border-color: var(--clr-dark-500);
@@ -205,6 +227,7 @@
     text-align: end;
     position: relative;
     top: -50px;
+
     span {
         width: clamp(300px, 30%, 600px);
         margin-right: auto;
@@ -222,7 +245,7 @@
         height: 100%;
     }
 }
-    
+
 @media screen and (max-width: 1045px) {
     .news-block-wrapper {
         justify-content: center;
@@ -247,6 +270,7 @@
     .dn577 {
         display: none;
     }
+
     .director-block .director-block-info {
         padding: 2rem 0;
     }

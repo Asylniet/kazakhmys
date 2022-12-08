@@ -9,6 +9,7 @@
   --clr-neutral-700: #D0D0D0;
   --clr-dark-700: #262729;
   --clr-dark-500: #6F6F6F;
+  --clr-dark-400: #707070;
   --clr-shadow: #26272920;
   --ff-primary: "Inter", sans-serif;
   --fw-small: 300;
@@ -25,7 +26,7 @@
   --fs-200: clamp(16px, 1.125rem, 18px);
   --fs-100: 1rem;
   --fs-50: 0.875rem;
-  --fs-25: 12px;
+  --fs-25: 0.75rem;
   --inline-padding: clamp(20px, 5vw, 130px);
 }
 
@@ -124,6 +125,10 @@
 
 .clr-dark {
   color: var(--clr-dark-700);
+}
+
+.fs-25 {
+  font-size: var(--fs-25);
 }
 
 .fs-200 {
