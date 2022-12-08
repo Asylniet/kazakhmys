@@ -1,10 +1,10 @@
 class Footer extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
     <footer class="container">
         <div class="flex spb ais g40">
             <div class="logo">
@@ -20,7 +20,7 @@ class Footer extends HTMLElement {
                     <div class="contact">
                         <img src="/assests/icons/phone-yellow.svg" alt="phone">
                         <span>Телефон доверия:</span>
-                        <a href="tel:87103668407" class="underline-hover">+7 (710) 366-84-07</a>
+                        <a href="tel:87103675003" class="underline-hover">+7 (710) 367-50-03</a>
                     </div>
                     <div class="contact">
                         <img src="/assests/icons/email-yellow.svg" alt="mail" class="mailIcon">
@@ -127,7 +127,7 @@ class Footer extends HTMLElement {
         <img src="/assests/images/footer-building.png" alt="Здание колледжа" class="footer-building">
     </footer>
     `;
-  }
+    }
 }
 
 customElements.define("footer-component", Footer);

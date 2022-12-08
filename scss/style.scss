@@ -591,6 +591,14 @@ header-component.open {
     }
   }
 
+  &.yellow {
+    color: var(--clr-accent-700);
+
+    &::after {
+      background-color: var(--clr-accent-700);
+    }
+  }
+
   svg,
   img {
     transition: 0.2s ease;
@@ -777,6 +785,9 @@ footer {
 
   &:hover {
     border-radius: 50%;
+  }
+  &:active {
+    background-color: var(--clr-dark-500);
   }
 }
 

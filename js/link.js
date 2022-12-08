@@ -9,10 +9,12 @@ class Link extends HTMLElement {
     const href = this.getAttribute('href');
     const blank = this.classList.contains('blank');
     let iconColor = '000';
-    if (classes === 'primary') {
+    if (classes.includes('primary')) {
       iconColor = '385CAD';
-    } else if (classes === 'primary2') {
+    } else if (classes.includes('primary2')) {
       iconColor = '00B2E3';
+    } else if (classes.includes('yellow')) {
+      iconColor = 'FFC600';
     }
     this.innerHTML = `
     <a href="${href}" ${blank ? 'target="blank"' : ''} class="flex link ${classes}">

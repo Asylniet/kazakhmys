@@ -11,7 +11,7 @@ class Header extends HTMLElement {
                 <div class="header-top">
                     <div class="flex spb small-nav">
                         <a href="/">
-                            <img src="/assests/images/logo.png" alt="Small logo">s
+                            <img src="/assests/images/logo.png" alt="Small logo">
                         </a>
                         <button class="hamburger-wrapper">
                             <div class="hamburger"></div>

@@ -710,6 +710,12 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
 .link.primary2::after {
   background-color: var(--clr-primary-700);
 }
+.link.yellow {
+  color: var(--clr-accent-700);
+}
+.link.yellow::after {
+  background-color: var(--clr-accent-700);
+}
 .link svg,
 .link img {
   transition: 0.2s ease;
@@ -872,6 +878,9 @@ footer .contact.flex.start img {
 }
 .goUp:hover {
   border-radius: 50%;
+}
+.goUp:active {
+  background-color: var(--clr-dark-500);
 }
 
 @media screen and (max-width: 877px) {

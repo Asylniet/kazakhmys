@@ -873,6 +873,9 @@ footer .contact.flex.start img {
 .goUp:hover {
   border-radius: 50%;
 }
+.goUp:active {
+  background-color: var(--clr-dark-500);
+}
 
 @media screen and (max-width: 877px) {
   footer {
