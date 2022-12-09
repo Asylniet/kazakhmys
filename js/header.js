@@ -89,12 +89,12 @@ class Header extends HTMLElement {
                         </div>
                         <div class="options-holder">
                             <div class="options">
-                                <a href="#" class="header-bottom-option">Руководство колледжа</a>
-                                <a href="#" class="header-bottom-option">Колледж в рейтингах</a> 
-                                <a href="#" class="header-bottom-option">Противодействие коррупции</a> 
-                                <a href="#" class="header-bottom-option">СМИ о нас</a> 
-                                <a href="#" class="header-bottom-option">Отзывы</a> 
-                                <a href="#" class="header-bottom-option">Контакты</a> 
+                                <a href="/pages/about/management.html" class="header-bottom-option">Руководство колледжа</a>
+                                <a href="/pages/about/rating.html" class="header-bottom-option">Колледж в рейтингах</a> 
+                                <a href="/pages/about/antikor.html" class="header-bottom-option">Противодействие коррупции</a> 
+                                <a href="/pages/about/smi.html" class="header-bottom-option">СМИ о нас</a> 
+                                <a href="/pages/about/feedback.html" class="header-bottom-option">Отзывы</a> 
+                                <a href="/pages/about/contacts.html" class="header-bottom-option">Контакты</a> 
                             </div>
                         </div>
                     </div>

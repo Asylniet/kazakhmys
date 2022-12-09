@@ -38,16 +38,16 @@ class Footer extends HTMLElement {
                         </div>
                         <ul>
                             <li>
-                                <a href="">Электронное правительство Республики казахстан</a>
+                                <a href="https://egov.kz/cms/ru" target="_blank" rel="noopener noreferrer">Электронное правительство Республики казахстан</a>
                             </li>
                             <li>
-                                <a href="">Юридические услуги «Әділет»</a>
+                                <a href="http://adilet-group.kz/index.html" target="_blank" rel="noopener noreferrer">Юридические услуги «Әділет»</a>
                             </li>
                             <li>
-                                <a href="">Образовательная платформа для студентов</a>
+                                <a href="" target="_blank" rel="noopener noreferrer">Образовательная платформа для студентов</a>
                             </li>
                             <li>
-                                <a href="">НАО «Талап»</a>
+                                <a href="https://kasipkor.kz/?lang=ru" target="_blank" rel="noopener noreferrer">НАО «Талап»</a>
                             </li>
                         </ul>
                     </div>
@@ -58,7 +58,7 @@ class Footer extends HTMLElement {
                         <div class="flex wrap start nav-lists">
                             <ul>
                                 <li>
-                                    <a href="">О колледже</a>
+                                    <a href="/pages/about/index.html">О колледже</a>
                                 </li>
                                 <li>
                                     <a href="">Абитуриенту</a>

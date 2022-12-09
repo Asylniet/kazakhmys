@@ -131,6 +131,29 @@ svg {
   }
 }
 
+.main-hero {
+  min-height: 420px;
+  position: relative;
+  text-align: center;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    z-index: -1;
+  }
+  span {
+    position: absolute;
+    left: 50%;
+    bottom: 64px;
+    transform: translate(-50%);
+    font-size: var(--fs-550);
+    font-weight: var(--fw-medium);
+    color: var(--clr-neutral-1000);
+  }
+}
+
 .dark-bg {
   position: relative;
   isolation: isolate;
@@ -155,7 +178,7 @@ svg {
 
   &::after {
     content: "";
-    width: 100vw;
+    width: 200vw;
     height: 1px;
     background-color: var(--clr-primary-900);
     position: absolute;
@@ -586,7 +609,7 @@ header-component.open {
     transition: 0.2s ease;
   }
 
-  &:hover::after {
+  &:not(.no-hover):hover::after {
     opacity: 1;
     bottom: 0;
   }
@@ -601,6 +624,9 @@ header-component.open {
 
   &.primary2 {
     color: var(--clr-primary-700);
+    path{
+      fill: var(--clr-primary-700);
+    }
 
     &::after {
       background-color: var(--clr-primary-700);
@@ -620,7 +646,7 @@ header-component.open {
     transition: 0.2s ease;
   }
 
-  &:hover {
+  &:not(.no-hover):hover {
 
     svg,
     img {
@@ -821,8 +847,12 @@ footer {
 }
 
 @media screen and (max-width: 690px) {
+  .main-hero {
+    min-height: 200px;
+  }
+
   main.responsive {
-    margin-top: 70px;
+    margin-top: 4.375rem;
   }
 
   header-component {

@@ -113,7 +113,7 @@
 }
 
 .clr-primary {
-  color: var(--clr-primary-700);
+  color: var(--clr-primary-900);
 }
 
 .clr-neutral {
@@ -283,6 +283,31 @@ svg {
   font-weight: var(--fw-medium);
 }
 
+.main-hero {
+  min-height: 420px;
+  position: relative;
+  text-align: center;
+}
+.main-hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  z-index: -1;
+}
+.main-hero span {
+  position: absolute;
+  left: 50%;
+  bottom: 64px;
+  transform: translate(-50%);
+  font-size: var(--fs-550);
+  font-weight: var(--fw-medium);
+  color: var(--clr-neutral-1000);
+}
+
 .dark-bg {
   position: relative;
   isolation: isolate;
@@ -297,6 +322,21 @@ svg {
   background: #000;
   opacity: 0.4;
   z-index: -1;
+}
+
+.block-title {
+  font-size: var(--fs-500);
+  color: var(--clr-primary-900);
+  position: relative;
+}
+.block-title::after {
+  content: "";
+  width: 200vw;
+  height: 1px;
+  background-color: var(--clr-primary-900);
+  position: absolute;
+  bottom: 0;
+  right: -15%;
 }
 
 .header-middle,
@@ -694,7 +734,7 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
   opacity: 0;
   transition: 0.2s ease;
 }
-.link:hover::after {
+.link:not(.no-hover):hover::after {
   opacity: 1;
   bottom: 0;
 }
@@ -706,6 +746,9 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
 }
 .link.primary2 {
   color: var(--clr-primary-700);
+}
+.link.primary2 path {
+  fill: var(--clr-primary-700);
 }
 .link.primary2::after {
   background-color: var(--clr-primary-700);
@@ -720,8 +763,8 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
 .link img {
   transition: 0.2s ease;
 }
-.link:hover svg,
-.link:hover img {
+.link:not(.no-hover):hover svg,
+.link:not(.no-hover):hover img {
   transform: rotate(45deg);
 }
 
@@ -894,8 +937,11 @@ footer .contact.flex.start img {
   }
 }
 @media screen and (max-width: 690px) {
+  .main-hero {
+    min-height: 200px;
+  }
   main.responsive {
-    margin-top: 70px;
+    margin-top: 4.375rem;
   }
   header-component {
     height: 55px;
