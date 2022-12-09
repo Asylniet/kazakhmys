@@ -148,6 +148,22 @@ svg {
   }
 }
 
+.block-title {
+  font-size: var(--fs-500);
+  color: var(--clr-primary-900);
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: var(--clr-primary-900);
+    position: absolute;
+    bottom: 0;
+    right: -15%;
+  }
+}
+
 
 .header-middle,
 .header-bottom-wrapper,
@@ -786,6 +802,7 @@ footer {
   &:hover {
     border-radius: 50%;
   }
+
   &:active {
     background-color: var(--clr-dark-500);
   }

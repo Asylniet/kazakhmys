@@ -251,6 +251,7 @@ main {
 
 .smi2 {
   margin-bottom: 4rem;
+
   .swiper-button-prev {
     left: 5.125rem;
   }
@@ -262,11 +263,12 @@ main {
 
 .yandexMap {
   margin: 3.75rem 0;
+
   iframe {
     border: none;
     outline: none;
     border-radius: 10px;
-  } 
+  }
 }
 
 .contacts-wrapper.flex {
@@ -277,10 +279,12 @@ main {
   gap: 20px;
   align-items: stretch !important;
   margin-bottom: 8rem;
+
   .contact {
     min-width: 300px;
     padding-left: 3.4375rem;
     position: relative;
+
     &::before {
       content: "";
       width: 3.125rem;
@@ -290,32 +294,34 @@ main {
       top: 8px;
       background: var(--clr-primary-900);
     }
-      span {
-        color: var(--clr-primary-900);
-        font-size: var(--fw-200);
-        font-weight: var(--fw-medium);
-      }
-      a:not(.inline) {
-        display: block;
-        margin: 5px 0 0 20px;
-      }
-  
-      a {
-        --color: var(--clr-dark-700);
-        width: fit-content;
-      }
-  
+
+    span {
+      color: var(--clr-primary-900);
+      font-size: var(--fw-200);
+      font-weight: var(--fw-medium);
+    }
+
+    a:not(.inline) {
+      display: block;
+      margin: 5px 0 0 20px;
+    }
+
+    a {
+      --color: var(--clr-dark-700);
+      width: fit-content;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    &.flex.start {
+      gap: 3px;
+
       img {
-        display: inline-block;
+        margin-top: 3px;
       }
-  
-      &.flex.start {
-        gap: 3px;
-  
-        img {
-          margin-top: 3px;
-        }
-      }
+    }
   }
 }
 
@@ -325,13 +331,27 @@ main {
   background-color: var(--clr-neutral-1000);
   box-shadow: 0 2px 10px var(--clr-shadow);
   border-radius: 10px;
+
   span {
     margin-bottom: 1.5rem;
   }
+
   img {
     transition: 0.2s ease;
+
     &:hover {
       transform: scale(1.1);
+    }
+  }
+}
+
+.club-wrapper {
+  background-color: var(--clr-neutral-700);
+  padding: 6.875rem 0;
+  .block-title {
+    color: var(--clr-dark-700);
+    &::after {
+      background-color: var(--clr-dark-700);
     }
   }
 }
@@ -432,14 +452,17 @@ main {
   padding: 1.875rem 1.5625rem 1.2rem 1.5625rem;
   border-radius: 10px;
   margin-bottom: auto;
+
   img {
     width: 23px;
   }
+
   &-title {
     font-size: var(--fw-100);
     display: inline-block;
     font-weight: var(--fw-semi-meidum);
     padding-bottom: 30px;
+
     &::after {
       content: "";
       width: 80%;
@@ -463,8 +486,10 @@ main {
       margin-bottom: 0;
     }
   }
+
   .social-media-block {
     padding: 1.5rem;
+
     img {
       width: 35px;
     }

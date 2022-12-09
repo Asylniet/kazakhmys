@@ -710,6 +710,12 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
 .link.primary2::after {
   background-color: var(--clr-primary-700);
 }
+.link.yellow {
+  color: var(--clr-accent-700);
+}
+.link.yellow::after {
+  background-color: var(--clr-accent-700);
+}
 .link svg,
 .link img {
   transition: 0.2s ease;
@@ -1059,21 +1065,6 @@ footer .contact.flex.start img {
 
 .news {
   padding-inline: var(--inline-padding);
-}
-
-.block-title {
-  font-size: var(--fs-500);
-  color: var(--clr-primary-900);
-  position: relative;
-}
-.block-title::after {
-  content: "";
-  width: 100vw;
-  height: 1px;
-  background-color: var(--clr-primary-900);
-  position: absolute;
-  bottom: 0;
-  right: -15%;
 }
 
 .news-block-wrapper {

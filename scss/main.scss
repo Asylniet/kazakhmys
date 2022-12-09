@@ -44,22 +44,6 @@
     padding-inline: var(--inline-padding);
 }
 
-.block-title {
-    font-size: var(--fs-500);
-    color: var(--clr-primary-900);
-    position: relative;
-
-    &::after {
-        content: "";
-        width: 100vw;
-        height: 1px;
-        background-color: var(--clr-primary-900);
-        position: absolute;
-        bottom: 0;
-        right: -15%;
-    }
-}
-
 .news-block-wrapper {
     @include flex(space-between, stretch, wrap);
     margin: 2.5rem 0;

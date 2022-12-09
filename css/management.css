@@ -299,6 +299,21 @@ svg {
   z-index: -1;
 }
 
+.block-title {
+  font-size: var(--fs-500);
+  color: var(--clr-primary-900);
+  position: relative;
+}
+.block-title::after {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: var(--clr-primary-900);
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+}
+
 .header-middle,
 .header-bottom-wrapper,
 .header-top {
@@ -1349,6 +1364,17 @@ main {
 }
 .social-media-block img:hover {
   transform: scale(1.1);
+}
+
+.club-wrapper {
+  background-color: var(--clr-neutral-700);
+  padding: 6.875rem 0;
+}
+.club-wrapper .block-title {
+  color: var(--clr-dark-700);
+}
+.club-wrapper .block-title::after {
+  background-color: var(--clr-dark-700);
 }
 
 @media screen and (max-width: 784px) {
