@@ -46,9 +46,20 @@ window.addEventListener('DOMContentLoaded', () => {
   const selectables = document.querySelectorAll('.selectable');
   selectables.forEach((selectable) => {
     const selected = selectable.querySelector('.selected');
-    selected.addEventListener('click', () => {
-      toggleSelectable(selectable);
-    });
+    if (window.matchMedia("(any-hover: none)").matches) {
+      selected.addEventListener('click', () => {
+        toggleSelectable(selectable);
+      });
+    } else {
+      selected.addEventListener('mouseover', () => {
+        selectable.classList.add('open');
+      });
+
+      selectable.addEventListener('mouseleave', () => {
+        selectable.classList.remove('open');
+      });
+    }
+
 
     // Close selectable dropdown if clicked outside of selectable element
     document.addEventListener('click', function (event) {
@@ -70,7 +81,6 @@ window.addEventListener('DOMContentLoaded', () => {
       languageContainer.classList.remove('open');
     });
   });
-
 
   const header = document.querySelector('header-component');
   const hamburger = document.querySelector('.hamburger-wrapper');

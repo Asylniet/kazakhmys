@@ -135,6 +135,7 @@ svg {
   min-height: 420px;
   position: relative;
   text-align: center;
+
   img {
     position: absolute;
     width: 100%;
@@ -143,6 +144,7 @@ svg {
     object-position: top;
     z-index: -1;
   }
+
   span {
     position: absolute;
     left: 50%;
@@ -421,6 +423,10 @@ header-component.open {
   }
 }
 
+.language-options.selectable .options-holder {
+  --size: 0;
+}
+
 .language-option {
   display: inline-block;
   min-width: 1.875rem;
@@ -436,7 +442,9 @@ header-component.open {
 }
 
 .selected {
+  display: inline-block;
   cursor: pointer;
+  padding: 10px 0;
 
   .language-option {
     color: var(--clr-primary-900);
@@ -494,6 +502,10 @@ header-component.open {
 
   .selectable {
 
+    .selected {
+      padding: 10px 0;
+    }
+
     &:hover,
     &.open {
       .selected {
@@ -506,7 +518,7 @@ header-component.open {
     }
 
     .options-holder {
-      --size: -10px;
+      --size: 0;
       border-radius: 10px;
       padding: 20px 0;
     }
@@ -624,7 +636,8 @@ header-component.open {
 
   &.primary2 {
     color: var(--clr-primary-700);
-    path{
+
+    path {
       fill: var(--clr-primary-700);
     }
 
@@ -889,7 +902,7 @@ footer {
   }
 
   footer .logo,
-  .logo-image {
+  .logo-image-link {
     display: none;
   }
 
@@ -903,6 +916,16 @@ footer {
     border-top: none;
     border-bottom: 1px solid var(--clr-neutral-700);
     gap: 1.25rem;
+
+    .selectable {
+      .selected {
+        padding: 0;
+      }
+
+      .options-holder {
+        --size: -10px;
+      }
+    }
 
     span,
     .just-link {

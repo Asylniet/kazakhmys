@@ -6,9 +6,11 @@ main {
 
 .history {
   margin: 3.75rem 0 8rem 0;
+
   .block-title {
     margin-bottom: 4rem;
   }
+
   p {
     margin-bottom: 1rem;
   }
@@ -18,6 +20,7 @@ main {
   .block-title {
     margin-bottom: 4rem;
   }
+
   img {
     max-width: 100%;
   }
@@ -27,6 +30,7 @@ main {
   @include flex(flex-start, stretch);
   gap: 1.25rem;
   margin-bottom: 4rem;
+
   img {
     width: 100%;
     height: 100%;
@@ -35,6 +39,7 @@ main {
     border-radius: 10px;
     min-width: 14.375rem;
   }
+
   .flex.column {
     width: 100%;
     align-items: flex-start;
@@ -43,22 +48,27 @@ main {
     overflow: hidden;
     border-radius: 10px
   }
+
   .row {
     @include flex(space-between, flex-start);
   }
+
   .first-row {
     width: 100%;
     align-items: stretch;
     gap: 1.125rem;
   }
+
   a {
     position: relative;
     border: 2px solid transparent;
     border-radius: 13px;
     transition: 0.2s ease;
+
     &:hover {
       border-color: var(- -clr-dark-700);
     }
+
     .text {
       align-items: flex-start;
       position: absolute;
@@ -67,15 +77,17 @@ main {
       color: var(--clr-neutral-1000);
       font-size: var(--fs-200);
       font-weight: var(--fw-medium);
+
       &.black {
         span {
           color: var(--clr-dark-700);
         }
       }
+
       img {
         margin: 5px;
         min-width: 0;
-        min-height: 0; 
+        min-height: 0;
         width: 20px;
         height: 20px;
         overflow: hidden;
@@ -88,13 +100,16 @@ main {
   .block-links {
     justify-content: center;
     flex-wrap: wrap;
+
     .flex.column {
       width: auto;
     }
+
     img {
       min-height: 0;
       min-width: 0;
     }
+
     .flex.column.last {
       align-items: center;
     }
@@ -215,6 +230,7 @@ main {
     span {
       font-weight: var(--fw-medium);
     }
+
     a {
       width: fit-content;
     }
@@ -467,12 +483,14 @@ main {
 }
 
 .club-wrapper {
-  background-color: #F8F8F8           ;
+  background-color: #F8F8F8;
   padding: 6.875rem 0;
+
   .block-title {
     font-weight: var(--fw-medium);
-    text-transform: uppercase;                 
+    text-transform: uppercase;
     color: var(--clr-dark-700);
+
     &::after {
       background-color: var(--clr-dark-700);
     }
@@ -483,14 +501,18 @@ main {
   .primary2 {
     color: var(--clr-primary-700);
   }
+
   .main-part {
     margin-top: 5.75rem;
+
     img.mainImage {
       width: clamp(280px, 40%, 480px);
     }
   }
+
   .link-to-files {
     gap: 20px;
+
     a {
       padding: 10px 0;
       padding-left: 1.5rem;
@@ -498,10 +520,12 @@ main {
       gap: 3rem;
       position: relative;
       isolation: isolate;
-      margin-bottom: 2rem; 
+      margin-bottom: 2rem;
+
       .arrow {
         transition: 0.2s ease;
       }
+
       &::before {
         content: "";
         width: 100vw;
@@ -515,6 +539,7 @@ main {
         opacity: 0;
         transition: 0.2s ease;
       }
+
       &::after {
         content: "";
         width: 100vw;
@@ -524,21 +549,26 @@ main {
         bottom: 0;
         left: 0;
       }
-      &:hover{
+
+      &:hover {
         &::before {
           opacity: 1;
         }
+
         .arrow {
           transform: rotate(45deg);
         }
       }
     }
+
     div {
       @include flex();
+
       img {
         margin-right: 5px;
         max-height: 20px;
-      } 
+      }
+
       span {
         text-transform: uppercase;
         font-size: var(--fs-200);
@@ -572,13 +602,17 @@ main {
     .main-part {
       justify-content: center;
     }
+
     .link-to-files {
       margin-top: 4rem;
-      a::after, a::before {
+
+      a::after,
+      a::before {
         width: calc(100% + 1.5rem);
       }
     }
   }
+
   .card,
   .feedback-card {
     box-shadow: none;
@@ -654,42 +688,53 @@ main {
   padding: 1.875rem 1.5625rem 1.2rem 1.5625rem;
   border-radius: 10px;
   margin-bottom: auto;
+
   &.white {
     transition: 0.2s ease;
     background-color: var(--clr-neutral-1000);
     box-shadow: 0 2px 10px var(--clr-shadow);
     color: var(--clr-dark-700);
+
     img {
       transition: 0.2s ease;
       filter: brightness(50%);
     }
+
     .file-card-title::after {
       transition: 0.2s ease;
       background-color: var(--clr-dark-700);
     }
+
     .link {
       transition: 0.2s ease;
       color: var(--clr-primary-900);
+
       path {
         transition: 0.2s ease;
         fill: var(--clr-primary-900);
       }
     }
+
     &:hover {
       color: var(--clr-neutral-1000);
       box-shadow: none;
       background-color: var(--clr-primary-900);
+
       img {
         filter: brightness(100%);
       }
+
       .file-card-title::after {
         background-color: var(--clr-neutral-1000);
       }
+
       .link {
         color: var(--clr-accent-700);
+
         svg {
           transform: rotate(45deg);
         }
+
         path {
           fill: var(--clr-accent-700);
         }
