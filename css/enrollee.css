@@ -23,6 +23,7 @@
   --fs-550: 2.5rem;
   --fs-500: clamp(16px, 2rem, 32px);
   --fs-400: clamp(16px, 1.875rem, 30px);
+  --fs-350: clamp(16px, 1.5rem, 24px);
   --fs-300: clamp(16px, 1.25rem, 20px);
   --fs-200: clamp(16px, 1.125rem, 18px);
   --fs-100: 1rem;
@@ -92,6 +93,10 @@
   margin: 0.625rem 0;
 }
 
+.mY20 {
+  margin: 1.25rem 0;
+}
+
 .mY60 {
   margin: 3.75rem 0;
 }
@@ -102,6 +107,10 @@
 
 .fw-light {
   font-weight: var(--fw-light);
+}
+
+.fw-semi-medium {
+  font-weight: var(--fw-semi-medium);
 }
 
 .fw-bold {
@@ -138,6 +147,10 @@
 
 .fs-300 {
   font-size: var(--fs-300);
+}
+
+.fs-350 {
+  font-size: var(--fs-350);
 }
 
 .fs-400 {
@@ -778,6 +791,10 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
   transform: rotate(45deg);
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 main {
   margin-bottom: 8.125rem;
 }
@@ -1161,11 +1178,55 @@ footer .contact.flex.start img {
   left: 3rem;
 }
 
-.requisit-card .flex.column.star:last-child {
+.requisites-wrapper {
+  margin: 4rem 0;
+  gap: clamp(20px, 8vw, 8.4rem);
+}
+
+.logo-big {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: clamp(100px, 40%, 250px);
+}
+
+.college-photo {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.requisit-card {
+  width: clamp(280px, 100%, 680px);
+  padding: 2.5rem;
+  background-color: var(--clr-neutral-1000);
+  box-shadow: 0px 2px 10px rgba(211, 210, 210, 0.25);
+  border-radius: 10px;
+}
+.requisit-card .flex.column.start:last-child {
   margin-top: 2rem;
+}
+.requisit-card .info {
+  gap: 5px;
+}
+.requisit-card .info a {
+  transition: 0.2s ease;
+}
+.requisit-card .info:not(.no-mb) {
+  margin-bottom: 1.5625rem;
+}
+.requisit-card .info:hover a {
+  color: var(--clr-primary-900);
+}
+.requisit-card .flex.spb {
+  width: 100%;
+  gap: 20px;
 }
 
 @media screen and (max-width: 690px) {
+  .title {
+    margin-top: 70px;
+  }
   .dn690 {
     display: none;
   }

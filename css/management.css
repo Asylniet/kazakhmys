@@ -23,6 +23,7 @@
   --fs-550: 2.5rem;
   --fs-500: clamp(16px, 2rem, 32px);
   --fs-400: clamp(16px, 1.875rem, 30px);
+  --fs-350: clamp(16px, 1.5rem, 24px);
   --fs-300: clamp(16px, 1.25rem, 20px);
   --fs-200: clamp(16px, 1.125rem, 18px);
   --fs-100: 1rem;
@@ -104,6 +105,10 @@
   font-weight: var(--fw-light);
 }
 
+.fw-semi-medium {
+  font-weight: var(--fw-semi-medium);
+}
+
 .fw-bold {
   font-weight: var(--fw-bold);
 }
@@ -138,6 +143,10 @@
 
 .fs-300 {
   font-size: var(--fs-300);
+}
+
+.fs-350 {
+  font-size: var(--fs-350);
 }
 
 .fs-400 {
@@ -1089,9 +1098,6 @@ main {
 }
 .history .block-title {
   margin-bottom: 4rem;
-}
-.history p {
-  margin-bottom: 1rem;
 }
 
 .structure .block-title {
