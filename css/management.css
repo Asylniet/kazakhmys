@@ -28,7 +28,7 @@
   --fs-100: 1rem;
   --fs-50: 0.875rem;
   --fs-25: 0.75rem;
-  --inline-padding: clamp(20px, 5vw, 130px);
+  --inline-padding: clamp(20px, 7vw, 130px);
 }
 
 .flex {
@@ -326,10 +326,11 @@ svg {
 
 .block-title {
   font-size: var(--fs-500);
+  font-weight: var(--fw-medium);
   color: var(--clr-primary-900);
   position: relative;
 }
-.block-title::after {
+.block-title:not(.without)::after {
   content: "";
   width: 200vw;
   height: 1px;
@@ -1120,6 +1121,7 @@ main {
 }
 .block-links .flex.column {
   width: 100%;
+  max-width: 30.625rem;
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.25rem;
@@ -1690,10 +1692,14 @@ main {
   }
 }
 .file-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   gap: 1rem;
   margin: 3.175rem auto;
-  align-items: stretch !important;
 }
 
 .file-card {

@@ -27,7 +27,7 @@
   --fs-100: 1rem;
   --fs-50: 0.875rem;
   --fs-25: 0.75rem;
-  --inline-padding: clamp(20px, 5vw, 130px);
+  --inline-padding: clamp(20px, 7vw, 130px);
 }
 
 .flex {

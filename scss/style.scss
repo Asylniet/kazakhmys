@@ -175,10 +175,11 @@ svg {
 
 .block-title {
   font-size: var(--fs-500);
+  font-weight: var(--fw-medium);
   color: var(--clr-primary-900);
   position: relative;
 
-  &::after {
+  &:not(.without)::after {
     content: "";
     width: 200vw;
     height: 1px;

@@ -42,6 +42,7 @@ main {
 
   .flex.column {
     width: 100%;
+    max-width: 30.625rem;
     align-items: flex-start;
     justify-content: space-between;
     gap: 1.25rem;
@@ -673,10 +674,10 @@ main {
 }
 
 .file-card-wrapper {
+  @include flex(center, stretch, wrap);
   width: 100%;
   gap: 1rem;
   margin: 3.175rem auto;
-  align-items: stretch !important;
 }
 
 .file-card {
