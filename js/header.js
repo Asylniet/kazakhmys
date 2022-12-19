@@ -115,29 +115,29 @@ class Header extends HTMLElement {
                         </div>
                     </div>
                     <div class="selectable">
-                        <div class="selected">
+                        <a href="/pages/student/index.html" class="selected">
                             <span>Студенту</span>
                             <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.00017 6.20834C4.87953 6.20904 4.75994 6.18591 4.64826 6.1403C4.53657 6.09468 4.43499 6.02746 4.34934 5.94251L0.68267 2.27584C0.597201 2.19037 0.529404 2.08891 0.483149 1.97724C0.436894 1.86557 0.413086 1.74588 0.413086 1.62501C0.413086 1.50414 0.436894 1.38445 0.483149 1.27278C0.529404 1.16111 0.597201 1.05964 0.68267 0.974173C0.768139 0.888705 0.869605 0.820907 0.981275 0.774652C1.09295 0.728397 1.21263 0.70459 1.3335 0.70459C1.45437 0.70459 1.57406 0.728397 1.68573 0.774652C1.7974 0.820907 1.89887 0.888705 1.98434 0.974173L5.00017 4.00834L8.02517 1.09334C8.1095 0.999575 8.21226 0.924217 8.32704 0.871979C8.44182 0.819742 8.56614 0.79175 8.69223 0.789752C8.81832 0.787754 8.94347 0.811794 9.05984 0.860369C9.17622 0.908944 9.28132 0.98101 9.36857 1.07206C9.45583 1.1631 9.52336 1.27118 9.56694 1.38951C9.61052 1.50785 9.62921 1.6339 9.62186 1.7598C9.6145 1.88569 9.58124 2.00871 9.52417 2.12116C9.4671 2.23361 9.38744 2.33308 9.29017 2.41334L5.6235 5.95167C5.45587 6.1133 5.23301 6.20506 5.00017 6.20834Z" fill="#262729"/>
                             </svg>
-                        </div>
+                        </a>
                         <div class="options-holder">
                             <div class="student-options options flex g20">
                                 <div class="forStudent">
-                                    <a href="#" class="header-bottom-option">Студенческий парламент колледжа</a>
+                                    <a href="/pages/student/parlament.html" class="header-bottom-option">Студенческий парламент колледжа</a>
                                     <a href="#" class="header-bottom-option">Портал дистанционного обучения</a> 
-                                    <a href="#" class="header-bottom-option">Правила внутреннего распорядка</a> 
-                                    <a href="#" class="header-bottom-option">Расписание</a> 
-                                    <a href="#" class="header-bottom-option">Спортивные секции</a> 
+                                    <a href="/pages/student/rules.html" class="header-bottom-option">Правила внутреннего распорядка</a> 
+                                    <a href="/pages/student/schedule-personal.html" class="header-bottom-option">Расписание</a> 
+                                    <a href="/pages/student/sports.html" class="header-bottom-option">Спортивные секции</a> 
                                     <a href="#" class="header-bottom-option">Социально-психологическая помощь</a> 
                                 </div>
                                 <div class="forStudent">
-                                    <a href="#" class="header-bottom-option">Мед.пункт</a> 
-                                    <a href="#" class="header-bottom-option">Библиотека</a> 
-                                    <a href="#" class="header-bottom-option">График учебного процесса</a> 
-                                    <a href="#" class="header-bottom-option">Аттестация</a> 
-                                    <a href="#" class="header-bottom-option">Кружки</a> 
-                                    <a href="#" class="header-bottom-option">Получение рабочей <br> профессии</a> 
+                                    <a href="/pages/student/clinic.html" class="header-bottom-option">Мед.пункт</a> 
+                                    <a href="/pages/student/library.html" class="header-bottom-option">Библиотека</a> 
+                                    <a href="/pages/student/schedule.html" class="header-bottom-option">График учебного процесса</a> 
+                                    <a href="/pages/student/attestation.html" class="header-bottom-option">Аттестация</a> 
+                                    <a href="/pages/student/mugs.html" class="header-bottom-option">Кружки</a> 
+                                    <a href="/pages/student/profession.html" class="header-bottom-option">Получение рабочей <br> профессии</a> 
                                 </div>
                             </div>
                         </div>

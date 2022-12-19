@@ -229,7 +229,7 @@
     }
 }
 
-.accordion {
+ .accordion {
     width: 100%;
     position: relative;
     transition: 0.2s ease;
@@ -265,7 +265,7 @@
     }
 
     &-title {
-        @include flex(space-between, flex-start);
+        @include flex(space-between, center);
         padding: 1rem 0;
         font-size: var(--fs-350);
         font-weight: var(--fw-semi-medium);

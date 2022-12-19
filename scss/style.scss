@@ -90,6 +90,10 @@ svg {
 // Reseting done
 
 
+img.general {
+  width: 100%;
+}
+
 .title {
   color: var(--clr-primary-900);
   font-weight: var(--fw-medium);
@@ -178,16 +182,14 @@ svg {
   font-weight: var(--fw-medium);
   color: var(--clr-primary-900);
   position: relative;
-
   &:not(.without)::after {
     content: "";
-    width: clamp(250px, 50vw, 510px);
-    max-width: 120%;
+    width: 100vw;
     height: 1px;
     background-color: var(--clr-primary-900);
     position: absolute;
     bottom: 0;
-    left: calc(var(--inline-padding) * -1);
+    right: -10%;
   }
 
   &.white {

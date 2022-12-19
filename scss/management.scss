@@ -305,6 +305,7 @@ main {
   .info {
     margin-top: 5px;
     display: block;
+    width: fit-content;
     --color: var(--clr-dark-700);
   }
 }

@@ -260,6 +260,10 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+img.general {
+  width: 100%;
+}
+
 .title {
   color: var(--clr-primary-900);
   font-weight: var(--fw-medium);
@@ -345,13 +349,18 @@ svg {
 }
 .block-title:not(.without)::after {
   content: "";
-  width: clamp(250px, 50vw, 510px);
-  max-width: 120%;
+  width: 100vw;
   height: 1px;
   background-color: var(--clr-primary-900);
   position: absolute;
   bottom: 0;
-  left: calc(var(--inline-padding) * -1);
+  right: -10%;
+}
+.block-title.white {
+  color: var(--clr-neutral-1000);
+}
+.block-title.white:not(.without)::after {
+  background-color: var(--clr-neutral-1000);
 }
 
 .header-middle,
@@ -943,11 +952,13 @@ footer .contact.flex.start img {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
+  border: 1px solid transparent;
   background: var(--clr-dark-700);
   border-radius: 5px;
   transition: 0.2s ease;
 }
 .goUp:hover {
+  border-color: var(--clr-neutral-1000);
   border-radius: 50%;
 }
 .goUp:active {
@@ -1383,6 +1394,9 @@ main {
 .phone .info {
   margin-top: 5px;
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   --color: var(--clr-dark-700);
 }
 

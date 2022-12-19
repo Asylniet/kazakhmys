@@ -260,6 +260,10 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+img.general {
+  width: 100%;
+}
+
 .title {
   color: var(--clr-primary-900);
   font-weight: var(--fw-medium);
@@ -345,13 +349,12 @@ svg {
 }
 .block-title:not(.without)::after {
   content: "";
-  width: clamp(250px, 50vw, 510px);
-  max-width: 120%;
+  width: 100vw;
   height: 1px;
   background-color: var(--clr-primary-900);
   position: absolute;
   bottom: 0;
-  left: calc(var(--inline-padding) * -1);
+  right: -10%;
 }
 .block-title.white {
   color: var(--clr-neutral-1000);
@@ -1355,7 +1358,7 @@ footer .contact.flex.start img {
 .accordion-title {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 1rem 0;

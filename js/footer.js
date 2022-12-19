@@ -61,7 +61,7 @@ class Footer extends HTMLElement {
                                     <a href="/pages/about/index.html">О колледже</a>
                                 </li>
                                 <li>
-                                    <a href="">Абитуриенту</a>
+                                    <a href="/pages/enrollee/index.html">Абитуриенту</a>
                                 </li>
                                 <li>
                                     <a href="">Обучение</a>
@@ -78,7 +78,7 @@ class Footer extends HTMLElement {
                             </ul>
                             <ul>
                                 <li>
-                                    <a href="">Студенту</a>
+                                    <a href="/pages/student/index.html">Студенту</a>
                                 </li>
                                 <li>
                                     <a href="">Трудоустройство</a>
