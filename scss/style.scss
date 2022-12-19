@@ -181,12 +181,21 @@ svg {
 
   &:not(.without)::after {
     content: "";
-    width: 200vw;
+    width: clamp(250px, 50vw, 510px);
+    max-width: 120%;
     height: 1px;
     background-color: var(--clr-primary-900);
     position: absolute;
     bottom: 0;
-    right: -15%;
+    left: calc(var(--inline-padding) * -1);
+  }
+
+  &.white {
+    color: var(--clr-neutral-1000);
+
+    &:not(.without)::after {
+      background-color: var(--clr-neutral-1000);
+    }
   }
 }
 
@@ -839,11 +848,13 @@ footer {
   height: 3.75rem;
   cursor: pointer;
   @include flex();
+  border: 1px solid transparent;
   background: var(--clr-dark-700);
   border-radius: 5px;
   transition: 0.2s ease;
 
   &:hover {
+    border-color: var(--clr-neutral-1000);
     border-radius: 50%;
   }
 

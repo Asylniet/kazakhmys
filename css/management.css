@@ -93,6 +93,10 @@
   margin: 0.625rem 0;
 }
 
+.mY20 {
+  margin: 1.25rem 0;
+}
+
 .mY60 {
   margin: 3.75rem 0;
 }
@@ -341,12 +345,13 @@ svg {
 }
 .block-title:not(.without)::after {
   content: "";
-  width: 200vw;
+  width: clamp(250px, 50vw, 510px);
+  max-width: 120%;
   height: 1px;
   background-color: var(--clr-primary-900);
   position: absolute;
   bottom: 0;
-  right: -15%;
+  left: calc(var(--inline-padding) * -1);
 }
 
 .header-middle,
@@ -785,6 +790,10 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
 .link:not(.no-hover):hover svg,
 .link:not(.no-hover):hover img {
   transform: rotate(45deg);
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 main {
