@@ -380,6 +380,9 @@ header-component.open {
 .selectable {
   position: relative;
 
+  a {
+    font: inherit;
+  }
   svg {
     display: inline-block;
     margin: 0 0 2px 0;
@@ -521,6 +524,9 @@ header-component.open {
     &:hover,
     &.open {
       .selected {
+        a {
+          color: var(--clr-primary-900);
+        }
         color: var(--clr-primary-900);
       }
 
@@ -544,13 +550,13 @@ header-component.open {
 
     .selected {
       font-weight: var(--fw-medium);
+      a {
+        text-transform: uppercase;
+      }
     }
 
     cursor: pointer;
 
-    span {
-      text-transform: uppercase;
-    }
 
     svg {
       display: inline-block;
@@ -620,6 +626,8 @@ header-component.open {
   gap: 10px;
   cursor: pointer;
   position: relative;
+  font-size: 16px;
+  width: fit-content;
 
   &::after {
     content: "";
@@ -926,18 +934,33 @@ footer {
 
   .header-top .actual-header-top,
   .header-bottom {
-    flex-direction: column;
-    align-items: flex-start;
+    // flex-direction: column;
+    // align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   .header-bottom {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 26rem;
     border-top: none;
-    border-bottom: 1px solid var(--clr-neutral-700);
     gap: 1.25rem;
 
+    a.just-link {
+      display: inline-block;
+      width: 135px;
+      font-size: 13px;
+    }
+
     .selectable {
+      min-width: 135px;
       .selected {
         padding: 0;
+        font-size: 13px;
+        svg {
+          margin-left: 1rem;
+        }
       }
 
       .options-holder {
@@ -998,6 +1021,9 @@ footer {
         &:hover,
         &.open {
           .selected {
+            a {
+              color: var(--clr-accent-700);
+            }
             color: var(--clr-accent-700);
           }
 

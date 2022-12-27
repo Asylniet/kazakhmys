@@ -539,6 +539,9 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
 .selectable {
   position: relative;
 }
+.selectable a {
+  font: inherit;
+}
 .selectable svg {
   display: inline-block;
   margin: 0 0 2px 0;
@@ -669,6 +672,9 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
 .header-bottom .selectable:hover .selected, .header-bottom .selectable.open .selected {
   color: var(--clr-primary-900);
 }
+.header-bottom .selectable:hover .selected a, .header-bottom .selectable.open .selected a {
+  color: var(--clr-primary-900);
+}
 .header-bottom .selectable:hover path, .header-bottom .selectable.open path {
   fill: var(--clr-primary-900);
 }
@@ -686,7 +692,7 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
 .header-bottom .selectable .selected {
   font-weight: var(--fw-medium);
 }
-.header-bottom .selectable span {
+.header-bottom .selectable .selected a {
   text-transform: uppercase;
 }
 .header-bottom .selectable svg {
@@ -755,6 +761,10 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
   gap: 10px;
   cursor: pointer;
   position: relative;
+  font-size: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .link::after {
   content: "";
@@ -1016,16 +1026,30 @@ footer .contact.flex.start img {
   }
   .header-top .actual-header-top,
 .header-bottom {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
   }
   .header-bottom {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 26rem;
     border-top: none;
-    border-bottom: 1px solid var(--clr-neutral-700);
     gap: 1.25rem;
+  }
+  .header-bottom a.just-link {
+    display: inline-block;
+    width: 135px;
+    font-size: 13px;
+  }
+  .header-bottom .selectable {
+    min-width: 135px;
   }
   .header-bottom .selectable .selected {
     padding: 0;
+    font-size: 13px;
+  }
+  .header-bottom .selectable .selected svg {
+    margin-left: 1rem;
   }
   .header-bottom .selectable .options-holder {
     --size: -10px;
@@ -1069,6 +1093,9 @@ footer .contact.flex.start img {
     fill: var(--clr-neutral-1000);
   }
   header-component.transparent .header-bottom .selectable:hover .selected, header-component.transparent .header-bottom .selectable.open .selected {
+    color: var(--clr-accent-700);
+  }
+  header-component.transparent .header-bottom .selectable:hover .selected a, header-component.transparent .header-bottom .selectable.open .selected a {
     color: var(--clr-accent-700);
   }
   header-component.transparent .header-bottom .selectable:hover path, header-component.transparent .header-bottom .selectable.open path {

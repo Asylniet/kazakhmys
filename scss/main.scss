@@ -4,14 +4,11 @@
     @include flex(center, center, nowrap, column);
     width: 100%;
     min-height: 100vh;
-    // background-image: url('/assests/images/main-hero.jpg');
-    // background-position: center center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     color: var(--clr-neutral-1000);
     text-align: center;
     font-weight: var(--fw-bold);
     position: relative;
+    overflow: hidden;
 
     .fs-700 {
         padding: 0 10px;
@@ -20,9 +17,8 @@
     video {
         position: absolute;
         top: 0;
-        left: 0;
-        // width: 100vw;
-        height: 100%;
+        left: 50%;
+        transform: translate(-50%);
         z-index: -1;
     }
 }
@@ -34,8 +30,8 @@
 
     .action {
         @include flex();
-        width: clamp(300px, 30vw, 380px);
-        height: 14.625rem;
+        width: clamp(150px, 30vw, 380px);
+        aspect-ratio: 8 / 5;
         color: var(--clr-neutral-1000);
         background-color: var(--clr-primary-900);
         text-align: center;
@@ -47,6 +43,12 @@
         &:hover {
             color: var(--clr-accent-700);
         }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .quickActions .action {
+        font-size: var(--fs-50);
     }
 }
 

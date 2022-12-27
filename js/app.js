@@ -11,6 +11,7 @@ function responsiveHeader() {
   const contact2 = document.querySelector('.contact2');
   const contact3 = document.querySelector('.contact3');
   const contact3Wrapper = document.querySelector('.contact3-wrapper');
+
   if (window.innerWidth <= 770) {
     [contact2, contact3Wrapper].forEach((container) => {
       const children = [].slice.call(container.children);
@@ -28,11 +29,22 @@ function responsiveHeader() {
   }
 
   const header = document.querySelector('header');
+  const additionalLinksWrapper = document.querySelector('.additionalLinksWrapper');
+  const headerBottom = document.querySelector('.header-bottom-wrapper');
   if (window.innerWidth <= 690) {
     const headerMiddle = document.querySelector('.header-middle');
+    const additionalLinks = additionalLinksWrapper.querySelectorAll('.additionalLink');
     header.appendChild(headerMiddle);
+    additionalLinks.forEach((link) => {
+      link.classList.add('just-link');
+      headerBottom.querySelector('.header-bottom').appendChild(link);
+    });
   } else {
-    const headerBottom = document.querySelector('.header-bottom-wrapper');
+    const additionalLinks = document.querySelectorAll('.additionalLink');
+    additionalLinks.forEach((link) => {
+      link.classList.remove('just-link');
+      additionalLinksWrapper.appendChild(link);
+    })
     header.appendChild(headerBottom);
 
     document.querySelector('header-component').classList.remove('open');
@@ -93,6 +105,5 @@ window.addEventListener('DOMContentLoaded', () => {
     if (document.activeElement.tagName.toLocaleLowerCase() != 'input') {
       responsiveHeader();
     }
-  })
-
+  });
 });

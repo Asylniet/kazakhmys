@@ -37,9 +37,9 @@
                     </svg>
                 </button>
             </a>
-            <video src="/assests/main-video.mp4" autoplay></video>
+            <video src="/assests/main-video.mp4" autoplay muted loop></video>
         </div>
-        <div class="quickActions flex wrap g20">
+        <div class="quickActions flex wrap g10">
             <a href="#" class="action">
                 Абитуриенту
             </a>
@@ -52,11 +52,11 @@
         </div>
 
         <div class="news container">
-            <div class="flex spb">
+            <div class="flex spb heading newsHeading">
                 <div class="block-title">Последние новости</div>
-                <link-component href="" text="Смотреть на все новости"></link-component>
+                <link-component href="" text="Смотреть все новости" class="newsLink"></link-component>
             </div>
-            <div class="news-block-wrapper">
+            <div class="news-block-wrapper newsWrapper">
                 <div class="news-block">
                     <img src="/assests/images/mainPage/news1.jpg" alt="news">
                     <div class="info-block">
@@ -112,12 +112,12 @@
             </div>
         </div>
         <div class="instagram-block container">
-            <div class="flex spb">
+            <div class="flex spb heading instaHeading">
                 <div class="block-title">Подписывайтесь на наш инстаграм</div>
-                <link-component href="https://www.instagram.com/ptk.balkhash/" text="Перейти в инстаграм" class="blank">
+                <link-component href="https://www.instagram.com/ptk.balkhash/" text="Перейти в инстаграм" class="blank instaLink">
                 </link-component>
             </div>
-            <div class="flex wrap insta-blocks">
+            <div class="flex wrap insta-blocks instaWrapper">
                 <a href="https://www.instagram.com/p/Ckpf8CnjPcm/" target="_blank" class="block">
                     <img src="/assests/images/mainPage/insta1.jpg" alt="Instagram">
                 </a>
@@ -177,6 +177,7 @@
     <footer-component></footer-component>
     <scroll-component></scroll-component>
     <script src="/js/app.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
