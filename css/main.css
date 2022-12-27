@@ -260,6 +260,10 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+img.general {
+  width: 100%;
+}
+
 .title {
   color: var(--clr-primary-900);
   font-weight: var(--fw-medium);
@@ -1112,17 +1116,21 @@ footer .contact.flex.start img {
   flex-direction: column;
   flex-wrap: nowrap;
   width: 100%;
-  min-height: 80vh;
-  background-image: url("/assests/images/main-hero.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 100vh;
   color: var(--clr-neutral-1000);
   text-align: center;
   font-weight: var(--fw-bold);
+  position: relative;
 }
 .hero .fs-700 {
   padding: 0 10px;
+}
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
 }
 
 .quickActions {

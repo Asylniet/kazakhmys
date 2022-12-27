@@ -3,17 +3,27 @@
 .hero {
     @include flex(center, center, nowrap, column);
     width: 100%;
-    min-height: 80vh;
-    background-image: url('/assests/images/main-hero.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 100vh;
+    // background-image: url('/assests/images/main-hero.jpg');
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     color: var(--clr-neutral-1000);
     text-align: center;
     font-weight: var(--fw-bold);
+    position: relative;
 
     .fs-700 {
         padding: 0 10px;
+    }
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // width: 100vw;
+        height: 100%;
+        z-index: -1;
     }
 }
 
