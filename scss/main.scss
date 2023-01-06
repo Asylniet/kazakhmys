@@ -57,7 +57,7 @@
 }
 
 .news-block-wrapper {
-    @include flex(space-between, stretch, wrap);
+    @include flex(center, stretch, wrap);
     margin: 2.5rem 0;
     margin-bottom: 8.125rem;
     gap: 1.25rem;
@@ -173,7 +173,7 @@
 
     .insta-blocks {
         margin-top: 4rem;
-        @include flex(space-between, center, wrap);
+        @include flex(center, center, wrap);
         gap: 1rem;
 
         .block {
@@ -242,6 +242,12 @@
     }
 }
 
+@media screen and (max-width: 1084px) {
+    .dn1084 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1045px) {
     .news-block-wrapper {
         justify-content: center;
@@ -253,6 +259,12 @@
         margin: 3rem 0;
         position: static;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 904px) {
+    .dn904 {
+        display: none;
     }
 }
 
