@@ -1004,8 +1004,8 @@ footer .contact.flex.start img {
     transition: 0.2s ease;
     transition-delay: 0.5s ease;
     background-color: rgba(56, 91, 173, 0.6392156863);
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px) saturate(50%);
+            backdrop-filter: blur(5px) saturate(50%);
   }
   header-component.open {
     background: var(--clr-neutral-1000);
@@ -1023,6 +1023,9 @@ footer .contact.flex.start img {
   footer .logo,
 .logo-image-link {
     display: none;
+  }
+  .footer-contacts.flex.spb.ais {
+    justify-content: flex-start;
   }
   .header-top .actual-header-top,
 .header-bottom {
