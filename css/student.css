@@ -272,6 +272,10 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+.empty {
+  visibility: hidden;
+}
+
 img.general {
   width: 100%;
 }
