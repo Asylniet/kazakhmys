@@ -126,11 +126,11 @@ class Header extends HTMLElement {
                             <div class="student-options options flex g20">
                                 <div class="forStudent">
                                     <a href="/pages/student/parlament.html" class="header-bottom-option">Студенческий парламент колледжа</a>
-                                    <a href="#" class="header-bottom-option">Портал дистанционного обучения</a> 
+                                    <a href="/pages/student/education-portal.html" class="header-bottom-option">Портал дистанционного обучения</a> 
                                     <a href="/pages/student/rules.html" class="header-bottom-option">Правила внутреннего распорядка</a> 
                                     <a href="/pages/student/schedule-personal.html" class="header-bottom-option">Расписание</a> 
                                     <a href="/pages/student/sports.html" class="header-bottom-option">Спортивные секции</a> 
-                                    <a href="#" class="header-bottom-option">Социально-психологическая помощь</a> 
+                                    <a href="/pages/student/social-service.html" class="header-bottom-option">Социально-психологическая помощь</a> 
                                 </div>
                                 <div class="forStudent">
                                     <a href="/pages/student/clinic.html" class="header-bottom-option">Мед.пункт</a> 

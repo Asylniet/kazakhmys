@@ -626,6 +626,17 @@ header-component.open {
       transform: rotate(45deg);
     }
   }
+
+  &.blue {
+    color: var(--clr-neutral-1000);
+    path {
+      fill: var(--clr-neutral-1000);
+    }
+    background-color: var(--clr-primary-900);
+    &:hover {
+      box-shadow: 0 10px 20px var(--clr-shadow);
+    }
+  }
 }
 
 .link {

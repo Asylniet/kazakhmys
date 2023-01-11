@@ -44,7 +44,7 @@ class Footer extends HTMLElement {
                                 <a href="http://adilet-group.kz/index.html" target="_blank" rel="noopener noreferrer">Юридические услуги «Әділет»</a>
                             </li>
                             <li>
-                                <a href="" target="_blank" rel="noopener noreferrer">Образовательная платформа для студентов</a>
+                                <a href="http://178.89.241.110/library" target="_blank" rel="noopener noreferrer">Образовательная платформа для студентов</a>
                             </li>
                             <li>
                                 <a href="https://kasipkor.kz/?lang=ru" target="_blank" rel="noopener noreferrer">НАО «Талап»</a>

@@ -97,6 +97,10 @@
   margin: 1.25rem 0;
 }
 
+.mY40 {
+  margin: 2.5rem 0;
+}
+
 .mY60 {
   margin: 3.75rem 0;
 }
@@ -125,6 +129,10 @@
   color: var(--clr-primary-900);
 }
 
+.clr-primary700 {
+  color: var(--clr-primary-700);
+}
+
 .clr-neutral {
   color: var(--clr-neutral-1000);
 }
@@ -139,6 +147,10 @@
 
 .fs-25 {
   font-size: var(--fs-25);
+}
+
+.fs-50 {
+  font-size: var(--fs-50);
 }
 
 .fs-200 {
@@ -754,6 +766,16 @@ header-component.open .header-top .small-nav .hamburger-wrapper .hamburger::befo
 }
 .button:hover svg {
   transform: rotate(45deg);
+}
+.button.blue {
+  color: var(--clr-neutral-1000);
+  background-color: var(--clr-primary-900);
+}
+.button.blue path {
+  fill: var(--clr-neutral-1000);
+}
+.button.blue:hover {
+  box-shadow: 0 10px 20px var(--clr-shadow);
 }
 
 .link {
