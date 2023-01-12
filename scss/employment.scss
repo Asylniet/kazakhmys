@@ -1,0 +1,104 @@
+@import 'style';
+
+.file-card-wrapper {
+    @include flex(center, stretch, wrap);
+    width: 100%;
+    padding-inline: var(--inline-padding);
+    gap: 1rem;
+    margin: 3.175rem auto;
+}
+
+.file-card {
+    position: relative;
+    color: var(--clr-neutral-1000);
+    width: clamp(280px, calc(33% - 0.5rem), 380px);
+    background-color: var(--clr-primary-900);
+    padding: 1.875rem 1.5625rem 1.2rem 1.5625rem;
+    border-radius: 10px;
+    margin-bottom: auto;
+
+    link-component a {
+        color: var(--clr-neutral-1000);
+    }
+
+    link-component path {
+        fill: var(--clr-neutral-1000);
+    }
+
+    &:hover {
+        .link {
+            svg {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &-link {
+        justify-content: flex-end;
+    }
+
+    &.white {
+        transition: 0.2s ease;
+        background-color: var(--clr-neutral-1000);
+        box-shadow: 0 2px 10px var(--clr-shadow);
+        color: var(--clr-dark-700);
+
+        img {
+            transition: 0.2s ease;
+            filter: brightness(50%);
+        }
+
+        .file-card-title::after {
+            transition: 0.2s ease;
+            background-color: var(--clr-dark-700);
+        }
+
+        .link {
+            transition: 0.2s ease;
+
+            path {
+                transition: 0.2s ease;
+            }
+        }
+
+        &:hover {
+            color: var(--clr-neutral-1000);
+            box-shadow: none;
+            background-color: var(--clr-primary-900);
+
+            .file-card-title::after {
+                background-color: var(--clr-neutral-1000);
+            }
+
+            .link {
+                color: var(--clr-neutral-1000);
+
+                svg {
+                    transform: rotate(45deg);
+                }
+
+                path {
+                    fill: var(--clr-neutral-1000);
+                }
+            }
+        }
+    }
+
+    &-title {
+        font-size: var(--fs-300);
+        display: inline-block;
+        font-weight: var(--fw-medium);
+        padding-bottom: 30px;
+
+        &::after {
+            content: "";
+            width: 80%;
+            height: 1px;
+            background-color: var(--clr-neutral-1000);
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
