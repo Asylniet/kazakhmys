@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', function () {
       button.innerText = index;
       button.setAttribute('index', index);
       pagination.appendChild(button);
-      if (pages > 5) second_dot.classList.remove('hidden');
+      if (pages > 6) second_dot.classList.remove('hidden');
       if (index > 5 && index !== pages) {
         button.classList.add('hidden');
       }
@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', function () {
     active == pages || pages < 3 ? next.classList.add('hidden') : next.classList.remove('hidden');
 
     active > 4 ? first_dot.classList.remove('hidden') : first_dot.classList.add('hidden');
-    active >= pages - 2 ? second_dot.classList.add('hidden') : second_dot.classList.remove('hidden');
+    active >= pages - 2 || pages <= 6 ? second_dot.classList.add('hidden') : second_dot.classList.remove('hidden');
     for (let index = 1; index < pages - 1; index++) {
       if (index >= +active - 3 && index <= +active + 1 || index == +active) {
         buttons[index].classList.remove('hidden');
