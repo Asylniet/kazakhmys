@@ -455,6 +455,7 @@
 .left-outside.blue {
     background-color: var(--clr-primary-900);
     color: var(--clr-neutral-1000);
+
     &::before {
         background: var(--clr-primary-900);
     }
@@ -462,6 +463,7 @@
 
 .left-outside.gray {
     background-color: var(--clr-neutral-900);
+
     &::before {
         background: var(--clr-neutral-900);
     }
@@ -478,12 +480,14 @@ ol.special {
         flex: 1;
         width: clamp(280px, calc(50% - var(--inline-padding)), calc(50% - var(--inline-padding)));
     }
+
     &.small {
         img {
             flex: 1;
             width: clamp(280px, calc(34% - var(--inline-padding)), calc(34% - var(--inline-padding)));
         }
     }
+
     &.no-flex {
         img:last-child {
             flex: none;
@@ -495,13 +499,16 @@ ol.special {
     .info {
         align-items: stretch;
     }
+
     .info-wrapper {
         width: 270px;
         padding: 0 2rem;
         border-right: 1px solid var(--clr-neutral-700);
+
         &:first-child {
             padding-left: 0;
         }
+
         &:last-child {
             padding-right: 0;
             border-right: none;
@@ -511,15 +518,18 @@ ol.special {
 
 .instruction {
     margin: 8.125rem 0;
+
     video {
         width: clamp(280px, 50%, 580px);
         flex: 1;
         border-radius: 10px;
     }
+
     .flex.wrap {
         justify-content: flex-start;
         gap: 20px;
     }
+
     .fw-semi-medium {
         flex: 1;
     }
@@ -575,6 +585,7 @@ ol.special {
         .info {
             flex-direction: column;
         }
+
         .info-wrapper {
             padding: 1rem 0;
             border-right: none;
