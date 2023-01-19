@@ -1,0 +1,128 @@
+@import 'style';
+
+.file-card-wrapper {
+  @include flex(center, stretch, wrap);
+  width: 100%;
+  padding-inline: var(--inline-padding);
+  gap: 1rem;
+  margin: 6.175rem auto;
+}
+
+.file-card {
+  position: relative;
+  color: var(--clr-neutral-1000);
+  width: clamp(280px, calc(33% - 0.5rem), 380px);
+  background-color: var(--clr-primary-700);
+  padding: 1.875rem 1.5625rem 1.2rem 1.5625rem;
+  border-radius: 10px;
+  margin-bottom: auto;
+
+  link-component a {
+      color: var(--clr-neutral-1000);
+  }
+
+  link-component path {
+      fill: var(--clr-neutral-1000);
+  }
+
+  &:hover {
+      .link {
+          svg {
+              transform: rotate(45deg);
+          }
+      }
+  }
+
+  &-link {
+      justify-content: flex-end;
+  }
+
+  &-title {
+      font-size: var(--fs-200);
+      display: inline-block;
+      font-weight: var(--fw-semi-medium);
+      padding-bottom: 40px;
+
+      &::after {
+          content: "";
+          width: 80%;
+          height: 1px;
+          background-color: var(--clr-neutral-1000);
+          position: absolute;
+          bottom: 60px;
+          left: 0;
+          transform: translateY(-50%);
+      }
+  }
+}
+
+.switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 8.125rem;
+  border-top: 1px solid var(--clr-neutral-700);
+  border-bottom: 1px solid var(--clr-neutral-700);
+}
+
+.switcher .line {
+  width: 1px;
+  height: 100%;
+  min-height: 90px;
+  background-color: var(--clr-neutral-700);
+}
+
+.switcher .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 2rem 0;
+  gap: 10px;
+  margin: 0 clamp(1rem, 5vw, 10%);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.switcher .tab svg,
+.switcher .tab path {
+  transition: 0.2s ease;
+}
+
+.switcher .tab.active {
+  color: var(--clr-primary-700);
+}
+
+.switcher .tab.active svg {
+  transform: rotate(180deg);
+}
+
+.switcher .tab.active path {
+  fill: var(--clr-primary-700);
+}
+
+.switcher .tab:hover {
+  color: var(--clr-primary-900);
+}
+
+.switcher .tab:hover path {
+  fill: var(--clr-primary-900);
+}
+
+.tab-page {
+  transition: 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow-y: hidden;
+}
+
+.tab-page.active {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}

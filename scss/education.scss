@@ -296,6 +296,25 @@ table.customTable th:nth-child(3) {
     .flex {
         flex-wrap: wrap;
         justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.wrappable {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.ticks-long {
+    .flex {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .checkmark {
+        width: fit-content;
+        min-width: 400px;
+        max-width: none;
     }
 }
 
@@ -315,6 +334,14 @@ table.customTable th:nth-child(3) {
 @media screen and (max-width: 690px) {
     main.responsive {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ticks-long {
+        .checkmark {
+            min-width: 280px;
+        }
     }
 }
 
