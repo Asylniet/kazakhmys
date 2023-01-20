@@ -1228,7 +1228,7 @@ footer .contact.flex.start img {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  margin-top: 8.125rem;
+  margin: 3.75rem 0;
   border-top: 1px solid var(--clr-neutral-700);
   border-bottom: 1px solid var(--clr-neutral-700);
 }
@@ -1248,9 +1248,12 @@ footer .contact.flex.start img {
   flex-wrap: nowrap;
   padding: 2rem 0;
   gap: 10px;
-  margin: 0 clamp(1rem, 5vw, 10%);
+  margin: 0 clamp(1rem, 7vw, 20%);
   cursor: pointer;
   transition: 0.2s ease;
+}
+.switcher .tab.wide {
+  margin: 0 10%;
 }
 
 .switcher .tab svg,
@@ -1290,4 +1293,38 @@ footer .contact.flex.start img {
   height: 100%;
   opacity: 1;
   visibility: visible;
+}
+
+.complex-image-layout {
+  align-items: stretch;
+  gap: 1rem;
+}
+.complex-image-layout div:nth-child(1) {
+  width: clamp(280px, 35%, 23.75rem);
+}
+.complex-image-layout div:nth-child(2) {
+  width: clamp(280px, 25%, 17.5rem);
+}
+.complex-image-layout div:nth-child(3) {
+  width: clamp(280px, 40%, 30rem);
+}
+.complex-image-layout img {
+  margin: 0.5rem;
+  max-width: 100%;
+}
+.complex-image-layout .flex.column {
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+}
+
+.result {
+  margin-top: 3.75rem;
+  justify-content: flex-start;
+}
+.result-text {
+  width: 40%;
+  margin-right: clamp(2rem, 5vw, 10.25rem);
 }

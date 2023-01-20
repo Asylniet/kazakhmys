@@ -1,0 +1,138 @@
+@import 'style';
+
+img {
+  max-width: 100%;
+}
+
+.quote {
+  padding-top: 6.25rem;
+  margin-bottom: 3.75rem;
+  position: relative;
+  --bg-size: 80%;
+  background: rgb(248,248,248);
+  background: -moz-linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(248,248,248,1) var(--bg-size), rgba(255,255,255,1) var(--bg-size));
+  background: -webkit-linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(248,248,248,1) var(--bg-size), rgba(255,255,255,1) var(--bg-size));
+  background: linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(248,248,248,1) var(--bg-size), rgba(255,255,255,1) var(--bg-size));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8f8f8",endColorstr="#ffffff",GradientType=1);
+
+  img {
+    width: 50%;
+    max-height: 414px;
+    aspect-ratio: 134 / 103.5;
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .flex {
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: var(--bg-size);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%);
+    background-color: #F8F8F8;
+  }
+
+  &-text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-right: 2rem;
+
+    &-descr {
+      text-align: left;
+      color: var(--clr-dark-700);
+      position: relative;
+      left: -5rem;
+      top: 5rem;
+    }
+    span {
+      display: inline-block;
+      max-width: 32.75rem;
+      text-align: start;
+      padding-left: 6rem;
+    }
+  }
+
+  &-big {
+    line-height: 4.375rem;
+    color: #385CAD;
+    font-size: clamp(90px, 16rem, 128px);
+    opacity: 0.1;
+    font-weight: 700;
+    position: relative;
+
+    &.left {
+      left: -6rem;
+    }
+
+    &.right {
+      right: -12rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1117px) {
+  .quote {
+    &-text {
+      &-descr {
+        top: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 817px) {
+  .quote {
+    --bg-size: 100%;
+
+    &-text {
+      &-descr {
+        top: 0;
+      }
+    }
+
+    &-big {
+      font-size: clamp(70px, 5.625rem, 90px);
+
+      &.left {
+        left: -3rem;
+      }
+
+      &.right {
+        right: -12rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .quote {
+    --bg-size: 60%;
+
+    img {
+      width: 100%;
+    }
+    .flex {
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+
+
+    &-text {
+      text-align: start;
+
+      &-descr {
+        left: 0;
+      }
+      span {
+        padding-left: 3rem;
+      }
+    }
+  }
+}

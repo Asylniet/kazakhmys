@@ -124,6 +124,9 @@
     img {
         flex: 1;
         width: clamp(240px, 40%, 480px);
+        aspect-ratio: 120 / 127;
+        object-fit: cover;
+        border-radius: 0 0 10px 10px;
     }
 
     &-info {

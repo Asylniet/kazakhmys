@@ -64,13 +64,13 @@ class Footer extends HTMLElement {
                                     <a href="/pages/enrollee/index.html">Абитуриенту</a>
                                 </li>
                                 <li>
-                                    <a href="">Обучение</a>
+                                    <a href="/pages/education/index.html">Обучение</a>
                                 </li>
                                 <li>
                                     <a href="">Педогогический состав</a>
                                 </li>
                                 <li>
-                                    <a href="">Проекты</a>
+                                    <a href="/pages/projects/index.html">Проекты</a>
                                 </li>
                                 <li>
                                     <a href="">Подразделения</a>
@@ -81,7 +81,7 @@ class Footer extends HTMLElement {
                                     <a href="/pages/student/index.html">Студенту</a>
                                 </li>
                                 <li>
-                                    <a href="">Трудоустройство</a>
+                                    <a href="/pages/employment/index.html">Трудоустройство</a>
                                 </li>
                                 <li>
                                     <a href="">Навигатор профессий</a>
@@ -90,7 +90,7 @@ class Footer extends HTMLElement {
                                     <a href="">Партнеры</a>
                                 </li>
                                 <li>
-                                    <a href="">Новости</a>
+                                    <a href="/pages/news/index.html">Новости</a>
                                 </li>
                             </ul>
                         </div>
