@@ -9,18 +9,18 @@ img {
   margin-bottom: 3.75rem;
   position: relative;
   --bg-size: 80%;
-  background: rgb(248,248,248);
-  background: -moz-linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(248,248,248,1) var(--bg-size), rgba(255,255,255,1) var(--bg-size));
-  background: -webkit-linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(248,248,248,1) var(--bg-size), rgba(255,255,255,1) var(--bg-size));
-  background: linear-gradient(180deg, rgba(248,248,248,1) 0%, rgba(248,248,248,1) var(--bg-size), rgba(255,255,255,1) var(--bg-size));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8f8f8",endColorstr="#ffffff",GradientType=1);
+  background: rgb(248, 248, 248);
+  background: -moz-linear-gradient(180deg, rgba(248, 248, 248, 1) 0%, rgba(248, 248, 248, 1) var(--bg-size), rgba(255, 255, 255, 1) var(--bg-size));
+  background: -webkit-linear-gradient(180deg, rgba(248, 248, 248, 1) 0%, rgba(248, 248, 248, 1) var(--bg-size), rgba(255, 255, 255, 1) var(--bg-size));
+  background: linear-gradient(180deg, rgba(248, 248, 248, 1) 0%, rgba(248, 248, 248, 1) var(--bg-size), rgba(255, 255, 255, 1) var(--bg-size));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8f8f8", endColorstr="#ffffff", GradientType=1);
 
   img {
     width: 50%;
     max-height: 414px;
     aspect-ratio: 134 / 103.5;
     object-fit: cover;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
   }
 
   .flex {
@@ -51,6 +51,7 @@ img {
       left: -5rem;
       top: 5rem;
     }
+
     span {
       display: inline-block;
       max-width: 32.75rem;
@@ -74,6 +75,71 @@ img {
     &.right {
       right: -12rem;
     }
+  }
+}
+
+.question {
+  margin: 8.125rem 0;
+
+  img {
+    width: 35%;
+  }
+}
+
+.form {
+  margin-top: 3.75rem;
+  width: clamp(280px, 60%, 680px);
+
+  form {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    color: var(--clr-primary-900);
+    font-weight: var(--fw-medium);
+    margin-bottom: 0.625rem;
+  }
+
+  input,
+  .input {
+    width: 100%;
+    margin-bottom: 1.5625rem;
+    padding: 1rem 1.25rem;
+    border: none;
+    outline: none;
+    border: 1px solid var(--clr-neutral-700);
+    border-radius: 10px;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 8.875rem;
+    max-height: 18.75rem;
+  }
+
+  button {
+    max-height: 55px;
+    padding: 0.6rem 2.185rem;
+    margin-left: auto;
+  }
+}
+
+.answer {
+  padding: 1.875rem 2.1rem;
+  background-color: var(--clr-neutral-1000);
+  box-shadow: 0px 2px 10px rgba(211, 210, 210, 0.25);
+  border-radius: 10px;
+  margin: 1.25rem 0;
+
+  .fs-200 {
+    color: var(--clr-primary-700);
+    margin-bottom: 2rem;
+  }
+
+  .gray-text {
+    color: var(--clr-dark-500);
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -118,6 +184,7 @@ img {
     img {
       width: 100%;
     }
+
     .flex {
       justify-content: flex-start;
       flex-direction: column;
@@ -130,9 +197,20 @@ img {
       &-descr {
         left: 0;
       }
+
       span {
         padding-left: 3rem;
       }
+    }
+  }
+
+  .question {
+    .form {
+      width: 100%;
+    }
+
+    img {
+      display: none;
     }
   }
 }
