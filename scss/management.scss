@@ -93,6 +93,96 @@ main {
   }
 }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  @include flex();
+  z-index: 2;
+  overflow-y: scroll;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  .close {
+    padding: 0.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    @include flex();
+    border-radius: 5px;
+    transition: 0.2s ease;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--clr-neutral-700);
+    }
+
+    img {
+      width: 15px;
+    }
+  }
+
+  .block {
+    margin: 1rem;
+    position: relative;
+    background-color: var(--clr-neutral-1000);
+    border-radius: 10px;
+    width: clamp(25.75rem, 80%, 73.75rem);
+    padding: 3.125rem;
+
+
+    .flex {
+      justify-content: flex-start;
+      gap: 4.375rem;
+
+      img {
+        width: 15.625rem;
+      }
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      list-style-position: outside;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 809px) {
+  .popup {
+    .block {
+      .close {
+        top: 1rem;
+        right: 1rem;
+      }
+
+      .flex {
+        gap: 1rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   .block-links {
     justify-content: center;
@@ -596,6 +686,12 @@ main {
 }
 
 @media screen and (max-width: 677px) {
+  .popup {
+    .block {
+      padding: 1rem;
+    }
+  }
+
   .club {
     .main-part {
       justify-content: center;

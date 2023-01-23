@@ -67,13 +67,13 @@ class Footer extends HTMLElement {
                                     <a href="/pages/education/index.html">Обучение</a>
                                 </li>
                                 <li>
-                                    <a href="">Педогогический состав</a>
+                                    <a href="/pages/staff/index.html">Педогогический состав</a>
                                 </li>
                                 <li>
                                     <a href="/pages/projects/index.html">Проекты</a>
                                 </li>
                                 <li>
-                                    <a href="">Подразделения</a>
+                                    <a href="/pages/divisions/index.html">Подразделения</a>
                                 </li>
                             </ul>
                             <ul>

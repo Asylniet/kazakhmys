@@ -1,0 +1,29 @@
+@import 'style';
+
+.images.flex {
+    margin-top: 8.125rem;
+    align-items: stretch;
+
+    img {
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    img:nth-child(1) {
+        width: clamp(280px, 40%, 402px);
+    }
+
+    img:nth-child(2) {
+        width: clamp(280px, 40%, 470px);
+    }
+}
+
+.videos {
+    gap: 1.25rem;
+
+    video {
+        min-width: 280px;
+        border-radius: 10px;
+        flex: 1;
+    }
+}

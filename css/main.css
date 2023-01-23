@@ -1045,6 +1045,30 @@ footer .contact.flex.start img {
   header-component.open .header-top-wrapper {
     background-color: var(--clr-primary-900);
   }
+  .contact1 {
+    position: relative;
+    width: 100%;
+  }
+  .contact1 .flex.g10 {
+    max-width: 130px;
+    position: absolute;
+    right: 1rem;
+    top: 4rem;
+  }
+  .contact1 .flex.g10 a {
+    margin-left: 2px;
+  }
+  .contact1 .flex.g10 svg {
+    width: 39px;
+  }
+  .contact1 .flex.g10 svg path {
+    fill: var(--clr-primary-900);
+  }
+  .contact3 {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
   .selectable .student-options {
     padding-right: 30px !important;
     flex-direction: column;
@@ -1093,8 +1117,28 @@ footer .contact.flex.start img {
 .header-bottom .just-link {
     font-size: var(--fs-100);
   }
-}
-@media screen and (max-width: 430px) {
+  .language-options.selectable {
+    visibility: hidden;
+    opacity: 0;
+    margin-left: auto;
+  }
+  .language-options.selectable .selected span {
+    color: var(--clr-neutral-1000);
+  }
+  .language-options.selectable span {
+    color: var(--clr-dark-700);
+  }
+  .language-options.selectable svg path {
+    fill: var(--clr-neutral-1000);
+  }
+  .language-options.selectable.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  .language-top-holder {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
   .search {
     margin-bottom: 10px;
     width: 100%;
